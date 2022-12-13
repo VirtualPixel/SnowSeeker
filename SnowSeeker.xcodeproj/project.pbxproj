@@ -11,6 +11,16 @@
 		57AC908D2948953D00270A05 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC908C2948953D00270A05 /* ContentView.swift */; };
 		57AC908F2948953D00270A05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57AC908E2948953D00270A05 /* Assets.xcassets */; };
 		57AC90922948953D00270A05 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57AC90912948953D00270A05 /* Preview Assets.xcassets */; };
+		57AC90992948EB8B00270A05 /* resorts.json in Resources */ = {isa = PBXBuildFile; fileRef = 57AC90982948EB8B00270A05 /* resorts.json */; };
+		57AC909B2948EBE200270A05 /* Resort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC909A2948EBE200270A05 /* Resort.swift */; };
+		57AC909D2948EC9000270A05 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC909C2948EC9000270A05 /* Bundle-Decodable.swift */; };
+		57AC90A12948EF6F00270A05 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC90A02948EF6F00270A05 /* WelcomeView.swift */; };
+		57AC90A32948F07F00270A05 /* DisableSlideOver-iPhone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC90A22948F07F00270A05 /* DisableSlideOver-iPhone.swift */; };
+		57AC90A52948F14600270A05 /* ResortView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC90A42948F14600270A05 /* ResortView.swift */; };
+		57AC90A729490C0400270A05 /* SkiDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC90A629490C0400270A05 /* SkiDetailsView.swift */; };
+		57AC90A929490CC800270A05 /* ResortDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC90A829490CC800270A05 /* ResortDetailsView.swift */; };
+		57AC90AB294915A100270A05 /* Facility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC90AA294915A100270A05 /* Facility.swift */; };
+		57AC90AD29491B3000270A05 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC90AC29491B3000270A05 /* Favorites.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +29,16 @@
 		57AC908C2948953D00270A05 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		57AC908E2948953D00270A05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57AC90912948953D00270A05 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		57AC90982948EB8B00270A05 /* resorts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = resorts.json; sourceTree = "<group>"; };
+		57AC909A2948EBE200270A05 /* Resort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resort.swift; sourceTree = "<group>"; };
+		57AC909C2948EC9000270A05 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
+		57AC90A02948EF6F00270A05 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		57AC90A22948F07F00270A05 /* DisableSlideOver-iPhone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DisableSlideOver-iPhone.swift"; sourceTree = "<group>"; };
+		57AC90A42948F14600270A05 /* ResortView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortView.swift; sourceTree = "<group>"; };
+		57AC90A629490C0400270A05 /* SkiDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkiDetailsView.swift; sourceTree = "<group>"; };
+		57AC90A829490CC800270A05 /* ResortDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortDetailsView.swift; sourceTree = "<group>"; };
+		57AC90AA294915A100270A05 /* Facility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facility.swift; sourceTree = "<group>"; };
+		57AC90AC29491B3000270A05 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +72,8 @@
 			isa = PBXGroup;
 			children = (
 				57AC908A2948953D00270A05 /* SnowSeekerApp.swift */,
-				57AC908C2948953D00270A05 /* ContentView.swift */,
+				57AC909E2948ECA400270A05 /* Model */,
+				57AC909F2948ECAE00270A05 /* View */,
 				57AC908E2948953D00270A05 /* Assets.xcassets */,
 				57AC90902948953D00270A05 /* Preview Content */,
 			);
@@ -65,6 +86,31 @@
 				57AC90912948953D00270A05 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		57AC909E2948ECA400270A05 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				57AC90982948EB8B00270A05 /* resorts.json */,
+				57AC90AC29491B3000270A05 /* Favorites.swift */,
+				57AC90AA294915A100270A05 /* Facility.swift */,
+				57AC909A2948EBE200270A05 /* Resort.swift */,
+				57AC909C2948EC9000270A05 /* Bundle-Decodable.swift */,
+				57AC90A22948F07F00270A05 /* DisableSlideOver-iPhone.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		57AC909F2948ECAE00270A05 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				57AC908C2948953D00270A05 /* ContentView.swift */,
+				57AC90A629490C0400270A05 /* SkiDetailsView.swift */,
+				57AC90A829490CC800270A05 /* ResortDetailsView.swift */,
+				57AC90A42948F14600270A05 /* ResortView.swift */,
+				57AC90A02948EF6F00270A05 /* WelcomeView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +171,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57AC90992948EB8B00270A05 /* resorts.json in Resources */,
 				57AC90922948953D00270A05 /* Preview Assets.xcassets in Resources */,
 				57AC908F2948953D00270A05 /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +184,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57AC90A12948EF6F00270A05 /* WelcomeView.swift in Sources */,
 				57AC908D2948953D00270A05 /* ContentView.swift in Sources */,
+				57AC90AB294915A100270A05 /* Facility.swift in Sources */,
+				57AC909B2948EBE200270A05 /* Resort.swift in Sources */,
+				57AC90A52948F14600270A05 /* ResortView.swift in Sources */,
+				57AC90AD29491B3000270A05 /* Favorites.swift in Sources */,
+				57AC90A32948F07F00270A05 /* DisableSlideOver-iPhone.swift in Sources */,
 				57AC908B2948953D00270A05 /* SnowSeekerApp.swift in Sources */,
+				57AC90A929490CC800270A05 /* ResortDetailsView.swift in Sources */,
+				57AC909D2948EC9000270A05 /* Bundle-Decodable.swift in Sources */,
+				57AC90A729490C0400270A05 /* SkiDetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
