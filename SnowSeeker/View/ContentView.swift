@@ -7,9 +7,15 @@
 
 import SwiftUI
 
+enum SortType {
+    case none, alphabetical, country
+}
+
 struct ContentView: View {
     @StateObject var favorites = Favorites()
     @State private var searchText = ""
+    @State private var sort: SortType = .none
+    @State private var isShowingSort = false
     let resorts: [Resort] = Bundle.main.decode("resorts.json")
     
     var filteredResorts: [Resort] {
@@ -22,7 +28,7 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            List(filteredResorts) { resort in
+            List(filteredResorts.sorted(by: sortFilteredResorts)) { resort in
                 NavigationLink {
                     ResortView(resort: resort)
                 } label: {
@@ -57,12 +63,39 @@ struct ContentView: View {
             }
             .navigationTitle("Resorts")
             .searchable(text: $searchText, prompt: "Search for a resort")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button {
+                        isShowingSort = true
+                    } label: {
+                        Text("Sort")
+                    }
+                }
+            }
+            .confirmationDialog("Sort", isPresented: $isShowingSort) {
+                Button("None") { sort = .none }
+                Button("Alphabetically") { sort = .alphabetical }
+                Button("Country") { sort = .country }
+            } message: {
+                Text("Select a way to sort the results.")
+            }
             
             WelcomeView()
         }
         .environmentObject(favorites)
         //.phoneOnlyStackNavigationView()
         // Require iPhones to always use stack navigation. Extension DisableSlideOver-iPhone.swift houses the tweak.
+    }
+    
+    func sortFilteredResorts(this: Resort, that: Resort) -> Bool {
+        switch sort {
+        case .none:
+            return false
+        case .alphabetical:
+            return this.name < that.name
+        case .country:
+            return this.country < that.country
+        }
     }
 }
 
@@ -71,4 +104,3 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-

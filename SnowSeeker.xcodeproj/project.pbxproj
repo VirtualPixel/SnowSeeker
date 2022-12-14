@@ -21,6 +21,8 @@
 		57AC90A929490CC800270A05 /* ResortDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC90A829490CC800270A05 /* ResortDetailsView.swift */; };
 		57AC90AB294915A100270A05 /* Facility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC90AA294915A100270A05 /* Facility.swift */; };
 		57AC90AD29491B3000270A05 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC90AC29491B3000270A05 /* Favorites.swift */; };
+		57D2B69B2949EB12003523CF /* FileManager-DocumentsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D2B69A2949EB12003523CF /* FileManager-DocumentsDirectory.swift */; };
+		57D2B69D2949EB2D003523CF /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D2B69C2949EB2D003523CF /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		57AC90A829490CC800270A05 /* ResortDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortDetailsView.swift; sourceTree = "<group>"; };
 		57AC90AA294915A100270A05 /* Facility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facility.swift; sourceTree = "<group>"; };
 		57AC90AC29491B3000270A05 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
+		57D2B69A2949EB12003523CF /* FileManager-DocumentsDirectory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager-DocumentsDirectory.swift"; sourceTree = "<group>"; };
+		57D2B69C2949EB2D003523CF /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 				57AC909A2948EBE200270A05 /* Resort.swift */,
 				57AC909C2948EC9000270A05 /* Bundle-Decodable.swift */,
 				57AC90A22948F07F00270A05 /* DisableSlideOver-iPhone.swift */,
+				57D2B69A2949EB12003523CF /* FileManager-DocumentsDirectory.swift */,
+				57D2B69C2949EB2D003523CF /* DataManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -190,10 +196,12 @@
 				57AC909B2948EBE200270A05 /* Resort.swift in Sources */,
 				57AC90A52948F14600270A05 /* ResortView.swift in Sources */,
 				57AC90AD29491B3000270A05 /* Favorites.swift in Sources */,
+				57D2B69B2949EB12003523CF /* FileManager-DocumentsDirectory.swift in Sources */,
 				57AC90A32948F07F00270A05 /* DisableSlideOver-iPhone.swift in Sources */,
 				57AC908B2948953D00270A05 /* SnowSeekerApp.swift in Sources */,
 				57AC90A929490CC800270A05 /* ResortDetailsView.swift in Sources */,
 				57AC909D2948EC9000270A05 /* Bundle-Decodable.swift in Sources */,
+				57D2B69D2949EB2D003523CF /* DataManager.swift in Sources */,
 				57AC90A729490C0400270A05 /* SkiDetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

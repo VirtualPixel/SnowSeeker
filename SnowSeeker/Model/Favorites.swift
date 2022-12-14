@@ -15,10 +15,7 @@ class Favorites: ObservableObject {
     private let saveKey = "Favorites"
     
     init() {
-        // load our saved data
-        
-        // still herre? Use an empty array
-        resorts = []
+        resorts = DataManager.load()
     }
     
     // returns true if our set contains this resort
@@ -30,17 +27,13 @@ class Favorites: ObservableObject {
     func add(_ resort: Resort) {
         objectWillChange.send()
         resorts.insert(resort.id)
-        save()
+        DataManager.save(resorts)
     }
     
     // removes the resort from our set, updates all views, and saves the change
     func remove(_ resort: Resort) {
         objectWillChange.send()
         resorts.remove(resort.id)
-        save()
-    }
-    
-    func save() {
-        // write the data
+        DataManager.save(resorts)
     }
 }

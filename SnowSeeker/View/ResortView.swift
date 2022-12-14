@@ -21,6 +21,7 @@ struct ResortView: View {
                 Image(decorative: resort.id)
                     .resizable()
                     .scaledToFit()
+                    .overlay(ImageOverlay(credit: "Credit: \(resort.imageCredit)"), alignment: .bottomTrailing)
                 
                 HStack {
                     if sizeClass == .compact && typeSize > .large {
@@ -80,5 +81,22 @@ struct ResortView_Previews: PreviewProvider {
     static var previews: some View {
         ResortView(resort: Resort.example)
             .environmentObject(Favorites())
+    }
+}
+
+struct ImageOverlay: View {
+    let credit: String
+    
+    var body: some View {
+        ZStack {
+            Text(credit)
+                .font(.callout)
+                .padding(6)
+                .foregroundColor(.white)
+        }
+        .background(.black)
+        .opacity(0.7)
+        .cornerRadius(10.0)
+        .padding(6)
     }
 }
